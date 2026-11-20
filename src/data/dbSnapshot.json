@@ -4,7 +4,7 @@
             "id": "010186e1-4cab-42f1-ad0e-117383b421cb",
             "name": "সেলিব্রেশন কেক",
             "slug": "celebration-cakes",
-            "image_url": "/assets/uploads/category-images/cat-cakes.png",
+            "image_url": "/assets/uploads/category-images/cat-cakes.webp",
             "parent_id": null,
             "sort_order": 1,
             "is_active": true,
@@ -19,7 +19,7 @@
             "id": "08320fae-6325-4d48-aeba-ec21566003c9",
             "name": "পেস্ট্রি ও স্লাইস",
             "slug": "pastries-slices",
-            "image_url": "/assets/uploads/category-images/cat-pastries.png",
+            "image_url": "/assets/uploads/category-images/cat-pastries.webp",
             "parent_id": null,
             "sort_order": 2,
             "is_active": true,
@@ -34,7 +34,7 @@
             "id": "52682c1a-a9f3-4cf2-aeea-740db0d6c5c2",
             "name": "কুকিজ ও বিস্কুট",
             "slug": "cookies-biscuits",
-            "image_url": "/assets/uploads/category-images/cat-cookies.png",
+            "image_url": "/assets/uploads/category-images/cat-cookies.webp",
             "parent_id": null,
             "sort_order": 4,
             "is_active": true,
@@ -49,7 +49,7 @@
             "id": "73e6977c-082a-4d21-9e81-c8d66e678cad",
             "name": "কাপকেক ও মাফিন",
             "slug": "cupcakes-muffins",
-            "image_url": "/assets/uploads/category-images/cat-cupcakes.png",
+            "image_url": "/assets/uploads/category-images/cat-cupcakes.webp",
             "parent_id": null,
             "sort_order": 5,
             "is_active": true,
@@ -64,7 +64,7 @@
             "id": "b2156bcd-4daa-430a-9b0d-987a1e3ae36d",
             "name": "সেভরি ও পাফ",
             "slug": "savory-puffs",
-            "image_url": "/assets/uploads/category-images/cat-savory.png",
+            "image_url": "/assets/uploads/category-images/cat-savory.webp",
             "parent_id": null,
             "sort_order": 6,
             "is_active": true,
@@ -79,7 +79,7 @@
             "id": "d569a5d2-96b2-4f2a-be84-bb84b6585ba2",
             "name": "বেকারি গিফট বক্স",
             "slug": "bakery-gift-boxes",
-            "image_url": "/assets/uploads/category-images/cat-gift-boxes.png",
+            "image_url": "/assets/uploads/category-images/cat-gift-boxes.webp",
             "parent_id": null,
             "sort_order": 8,
             "is_active": true,
@@ -94,7 +94,7 @@
             "id": "db500c9a-fc65-4c89-a574-a0061bc5ec7f",
             "name": "ব্রাউনি ও ডেজার্ট",
             "slug": "brownies-desserts",
-            "image_url": "/assets/uploads/category-images/cat-desserts.png",
+            "image_url": "/assets/uploads/category-images/cat-desserts.webp",
             "parent_id": null,
             "sort_order": 7,
             "is_active": true,
@@ -109,7 +109,7 @@
             "id": "edd85413-02dd-4175-98e3-c973c44f1ca1",
             "name": "আর্টিজান ব্রেড ও বান",
             "slug": "artisan-breads",
-            "image_url": "/assets/uploads/category-images/cat-breads.png",
+            "image_url": "/assets/uploads/category-images/cat-breads.webp",
             "parent_id": null,
             "sort_order": 3,
             "is_active": true,
@@ -125,7 +125,7 @@
         {
             "id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
             "name": "Dream Bakery",
-            "logo_url": "/assets/uploads/site-settings/bakery-logo.png",
+            "logo_url": "/assets/uploads/site-settings/bakery-logo.webp",
             "is_active": true,
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33",
@@ -177,9 +177,9 @@
             "stock_quantity": 45,
             "category_id": "db500c9a-fc65-4c89-a574-a0061bc5ec7f",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/fudgy-walnut-chocolate-brownie.png",
+            "image_url": "/assets/uploads/product-images/bakery/fudgy-walnut-chocolate-brownie.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/fudgy-walnut-chocolate-brownie.png"
+                "/assets/uploads/product-images/bakery/fudgy-walnut-chocolate-brownie.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -211,9 +211,9 @@
             "stock_quantity": 45,
             "category_id": "edd85413-02dd-4175-98e3-c973c44f1ca1",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/cinnamon-roll-glaze.png",
+            "image_url": "/assets/uploads/product-images/bakery/cinnamon-roll-glaze.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/cinnamon-roll-glaze.png"
+                "/assets/uploads/product-images/bakery/cinnamon-roll-glaze.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -245,9 +245,9 @@
             "stock_quantity": 45,
             "category_id": "52682c1a-a9f3-4cf2-aeea-740db0d6c5c2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/choco-chip-chunk-cookies.png",
+            "image_url": "/assets/uploads/product-images/bakery/choco-chip-chunk-cookies.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/choco-chip-chunk-cookies.png"
+                "/assets/uploads/product-images/bakery/choco-chip-chunk-cookies.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -279,9 +279,9 @@
             "stock_quantity": 45,
             "category_id": "08320fae-6325-4d48-aeba-ec21566003c9",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/new-york-baked-cheesecake-slice.png",
+            "image_url": "/assets/uploads/product-images/bakery/new-york-baked-cheesecake-slice.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/new-york-baked-cheesecake-slice.png"
+                "/assets/uploads/product-images/bakery/new-york-baked-cheesecake-slice.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -313,9 +313,9 @@
             "stock_quantity": 45,
             "category_id": "73e6977c-082a-4d21-9e81-c8d66e678cad",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/double-chocolate-fudge-cupcakes.png",
+            "image_url": "/assets/uploads/product-images/bakery/double-chocolate-fudge-cupcakes.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/double-chocolate-fudge-cupcakes.png"
+                "/assets/uploads/product-images/bakery/double-chocolate-fudge-cupcakes.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -347,9 +347,9 @@
             "stock_quantity": 45,
             "category_id": "010186e1-4cab-42f1-ad0e-117383b421cb",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.png",
+            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.png"
+                "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -381,9 +381,9 @@
             "stock_quantity": 45,
             "category_id": "edd85413-02dd-4175-98e3-c973c44f1ca1",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/artisan-sourdough-bread.png",
+            "image_url": "/assets/uploads/product-images/bakery/artisan-sourdough-bread.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/artisan-sourdough-bread.png"
+                "/assets/uploads/product-images/bakery/artisan-sourdough-bread.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -415,9 +415,9 @@
             "stock_quantity": 45,
             "category_id": "08320fae-6325-4d48-aeba-ec21566003c9",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/classic-tiramisu-pastry.png",
+            "image_url": "/assets/uploads/product-images/bakery/classic-tiramisu-pastry.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/classic-tiramisu-pastry.png"
+                "/assets/uploads/product-images/bakery/classic-tiramisu-pastry.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -449,9 +449,9 @@
             "stock_quantity": 45,
             "category_id": "db500c9a-fc65-4c89-a574-a0061bc5ec7f",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/espresso-mocha-mousse-dessert.png",
+            "image_url": "/assets/uploads/product-images/bakery/espresso-mocha-mousse-dessert.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/espresso-mocha-mousse-dessert.png"
+                "/assets/uploads/product-images/bakery/espresso-mocha-mousse-dessert.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -483,9 +483,9 @@
             "stock_quantity": 45,
             "category_id": "010186e1-4cab-42f1-ad0e-117383b421cb",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.png",
+            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.png"
+                "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -517,9 +517,9 @@
             "stock_quantity": 45,
             "category_id": "d569a5d2-96b2-4f2a-be84-bb84b6585ba2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/parisian-macaron-pastry-gift-box.png",
+            "image_url": "/assets/uploads/product-images/bakery/parisian-macaron-pastry-gift-box.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/parisian-macaron-pastry-gift-box.png"
+                "/assets/uploads/product-images/bakery/parisian-macaron-pastry-gift-box.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -551,9 +551,9 @@
             "stock_quantity": 45,
             "category_id": "010186e1-4cab-42f1-ad0e-117383b421cb",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.png",
+            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.png"
+                "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -585,9 +585,9 @@
             "stock_quantity": 45,
             "category_id": "d569a5d2-96b2-4f2a-be84-bb84b6585ba2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/celebration-cupcake-truffle-gift-box.png",
+            "image_url": "/assets/uploads/product-images/bakery/celebration-cupcake-truffle-gift-box.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/celebration-cupcake-truffle-gift-box.png"
+                "/assets/uploads/product-images/bakery/celebration-cupcake-truffle-gift-box.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -619,9 +619,9 @@
             "stock_quantity": 45,
             "category_id": "52682c1a-a9f3-4cf2-aeea-740db0d6c5c2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/butter-almond-shortbread-cookies.png",
+            "image_url": "/assets/uploads/product-images/bakery/butter-almond-shortbread-cookies.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/butter-almond-shortbread-cookies.png"
+                "/assets/uploads/product-images/bakery/butter-almond-shortbread-cookies.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -653,9 +653,9 @@
             "stock_quantity": 45,
             "category_id": "b2156bcd-4daa-430a-9b0d-987a1e3ae36d",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/butter-cheese-garlic-croissant-roll.png",
+            "image_url": "/assets/uploads/product-images/bakery/butter-cheese-garlic-croissant-roll.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/butter-cheese-garlic-croissant-roll.png"
+                "/assets/uploads/product-images/bakery/butter-cheese-garlic-croissant-roll.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -687,9 +687,9 @@
             "stock_quantity": 45,
             "category_id": "d569a5d2-96b2-4f2a-be84-bb84b6585ba2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/signature-cookie-brownie-hamper.png",
+            "image_url": "/assets/uploads/product-images/bakery/signature-cookie-brownie-hamper.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/signature-cookie-brownie-hamper.png"
+                "/assets/uploads/product-images/bakery/signature-cookie-brownie-hamper.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -721,9 +721,9 @@
             "stock_quantity": 45,
             "category_id": "edd85413-02dd-4175-98e3-c973c44f1ca1",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/french-crusty-baguette-loaf.png",
+            "image_url": "/assets/uploads/product-images/bakery/french-crusty-baguette-loaf.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/french-crusty-baguette-loaf.png"
+                "/assets/uploads/product-images/bakery/french-crusty-baguette-loaf.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -755,9 +755,9 @@
             "stock_quantity": 45,
             "category_id": "b2156bcd-4daa-430a-9b0d-987a1e3ae36d",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/smoked-chicken-cheese-patty.png",
+            "image_url": "/assets/uploads/product-images/bakery/smoked-chicken-cheese-patty.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/smoked-chicken-cheese-patty.png"
+                "/assets/uploads/product-images/bakery/smoked-chicken-cheese-patty.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -789,9 +789,9 @@
             "stock_quantity": 45,
             "category_id": "73e6977c-082a-4d21-9e81-c8d66e678cad",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/vanilla-confetti-birthday-cupcakes.png",
+            "image_url": "/assets/uploads/product-images/bakery/vanilla-confetti-birthday-cupcakes.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/vanilla-confetti-birthday-cupcakes.png"
+                "/assets/uploads/product-images/bakery/vanilla-confetti-birthday-cupcakes.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -823,9 +823,9 @@
             "stock_quantity": 45,
             "category_id": "db500c9a-fc65-4c89-a574-a0061bc5ec7f",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/nutella-hazelnut-fudge-brownie.png",
+            "image_url": "/assets/uploads/product-images/bakery/nutella-hazelnut-fudge-brownie.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/nutella-hazelnut-fudge-brownie.png"
+                "/assets/uploads/product-images/bakery/nutella-hazelnut-fudge-brownie.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -857,9 +857,9 @@
             "stock_quantity": 45,
             "category_id": "d569a5d2-96b2-4f2a-be84-bb84b6585ba2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/royal-bakery-dessert-gift-box.png",
+            "image_url": "/assets/uploads/product-images/bakery/royal-bakery-dessert-gift-box.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/royal-bakery-dessert-gift-box.png"
+                "/assets/uploads/product-images/bakery/royal-bakery-dessert-gift-box.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -891,9 +891,9 @@
             "stock_quantity": 45,
             "category_id": "b2156bcd-4daa-430a-9b0d-987a1e3ae36d",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/crispy-chicken-puff-pastry.png",
+            "image_url": "/assets/uploads/product-images/bakery/crispy-chicken-puff-pastry.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/crispy-chicken-puff-pastry.png"
+                "/assets/uploads/product-images/bakery/crispy-chicken-puff-pastry.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -925,9 +925,9 @@
             "stock_quantity": 45,
             "category_id": "010186e1-4cab-42f1-ad0e-117383b421cb",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.png",
+            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/black-forest-cherry-cake.png"
+                "/assets/uploads/product-images/bakery/black-forest-cherry-cake.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -959,9 +959,9 @@
             "stock_quantity": 45,
             "category_id": "73e6977c-082a-4d21-9e81-c8d66e678cad",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/strawberry-swirl-vanilla-cupcakes.png",
+            "image_url": "/assets/uploads/product-images/bakery/strawberry-swirl-vanilla-cupcakes.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/strawberry-swirl-vanilla-cupcakes.png"
+                "/assets/uploads/product-images/bakery/strawberry-swirl-vanilla-cupcakes.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -993,9 +993,9 @@
             "stock_quantity": 45,
             "category_id": "08320fae-6325-4d48-aeba-ec21566003c9",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/blueberry-danish-pastry.png",
+            "image_url": "/assets/uploads/product-images/bakery/blueberry-danish-pastry.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/blueberry-danish-pastry.png"
+                "/assets/uploads/product-images/bakery/blueberry-danish-pastry.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1027,9 +1027,9 @@
             "stock_quantity": 45,
             "category_id": "b2156bcd-4daa-430a-9b0d-987a1e3ae36d",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/savory-mushroom-spinach-quiche.png",
+            "image_url": "/assets/uploads/product-images/bakery/savory-mushroom-spinach-quiche.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/savory-mushroom-spinach-quiche.png"
+                "/assets/uploads/product-images/bakery/savory-mushroom-spinach-quiche.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1061,9 +1061,9 @@
             "stock_quantity": 45,
             "category_id": "52682c1a-a9f3-4cf2-aeea-740db0d6c5c2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/double-dark-fudge-cookies.png",
+            "image_url": "/assets/uploads/product-images/bakery/double-dark-fudge-cookies.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/double-dark-fudge-cookies.png"
+                "/assets/uploads/product-images/bakery/double-dark-fudge-cookies.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1095,9 +1095,9 @@
             "stock_quantity": 45,
             "category_id": "08320fae-6325-4d48-aeba-ec21566003c9",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/french-butter-croissant.png",
+            "image_url": "/assets/uploads/product-images/bakery/french-butter-croissant.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/french-butter-croissant.png"
+                "/assets/uploads/product-images/bakery/french-butter-croissant.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -1129,9 +1129,9 @@
             "stock_quantity": 45,
             "category_id": "73e6977c-082a-4d21-9e81-c8d66e678cad",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/assorted-gourmet-cupcakes.png",
+            "image_url": "/assets/uploads/product-images/bakery/assorted-gourmet-cupcakes.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/assorted-gourmet-cupcakes.png"
+                "/assets/uploads/product-images/bakery/assorted-gourmet-cupcakes.webp"
             ],
             "is_active": true,
             "is_featured": true,
@@ -1163,9 +1163,9 @@
             "stock_quantity": 45,
             "category_id": "db500c9a-fc65-4c89-a574-a0061bc5ec7f",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/salted-caramel-cream-dessert-cup.png",
+            "image_url": "/assets/uploads/product-images/bakery/salted-caramel-cream-dessert-cup.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/salted-caramel-cream-dessert-cup.png"
+                "/assets/uploads/product-images/bakery/salted-caramel-cream-dessert-cup.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1197,9 +1197,9 @@
             "stock_quantity": 45,
             "category_id": "52682c1a-a9f3-4cf2-aeea-740db0d6c5c2",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/oatmeal-raisin-honey-cookies.png",
+            "image_url": "/assets/uploads/product-images/bakery/oatmeal-raisin-honey-cookies.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/oatmeal-raisin-honey-cookies.png"
+                "/assets/uploads/product-images/bakery/oatmeal-raisin-honey-cookies.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1231,9 +1231,9 @@
             "stock_quantity": 45,
             "category_id": "edd85413-02dd-4175-98e3-c973c44f1ca1",
             "brand_id": "ddfbfea1-55b0-4335-8aae-4f8d9b933b5f",
-            "image_url": "/assets/uploads/product-images/bakery/soft-hokkaido-milk-buns.png",
+            "image_url": "/assets/uploads/product-images/bakery/soft-hokkaido-milk-buns.webp",
             "images": [
-                "/assets/uploads/product-images/bakery/soft-hokkaido-milk-buns.png"
+                "/assets/uploads/product-images/bakery/soft-hokkaido-milk-buns.webp"
             ],
             "is_active": true,
             "is_featured": false,
@@ -1265,7 +1265,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.webp"
         },
         {
             "id": "538bea05-3bdc-4806-8314-402b37d07692",
@@ -1278,7 +1278,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.webp"
         },
         {
             "id": "69037261-2570-4dda-a428-cf96f6692e67",
@@ -1291,7 +1291,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.webp"
         },
         {
             "id": "6d5d015c-40e2-4ae2-bb1b-7f0cbe1bed8f",
@@ -1304,7 +1304,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.webp"
         },
         {
             "id": "7892ed30-8592-427d-b943-e563ed4c42a7",
@@ -1317,7 +1317,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.webp"
         },
         {
             "id": "7f4f6fd0-a925-4693-80a8-31fff84c9e6e",
@@ -1330,7 +1330,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.webp"
         },
         {
             "id": "c13e3868-03d5-4b75-9ecb-ea1e291adeb3",
@@ -1343,7 +1343,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.webp"
         },
         {
             "id": "d1f1bc20-fd2f-4a79-84b7-4c08533abbd2",
@@ -1356,7 +1356,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.webp"
         },
         {
             "id": "e4994617-6ae3-4319-bcfd-eb6e383d3369",
@@ -1369,7 +1369,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/black-forest-cherry-cake.webp"
         },
         {
             "id": "edd3c18f-25e5-4e45-9574-3fdac70dea2b",
@@ -1382,7 +1382,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/belgian-chocolate-truffle-cake.webp"
         },
         {
             "id": "fc0a47f8-6237-4ed0-aeee-2713557583b3",
@@ -1395,7 +1395,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/strawberry-vanilla-dream-cake.webp"
         },
         {
             "id": "feec7d29-4630-4dcf-bef9-2dab49cd9ea9",
@@ -1408,7 +1408,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.png"
+            "image_url": "/assets/uploads/product-images/bakery/red-velvet-cream-cheese-cake.webp"
         }
     ],
     "order_statuses": [
@@ -1505,7 +1505,7 @@
         {
             "id": "00a54782-fdca-40f1-964b-d6bcb2a2c932",
             "key": "seo_og_image",
-            "value": "/assets/uploads/banners/bakery-hero-1.png",
+            "value": "/assets/uploads/banners/bakery-hero-1.webp",
             "group_name": "seo",
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33"
@@ -1553,7 +1553,7 @@
         {
             "id": "1412b5c0-003a-493b-9088-385fbfb50a92",
             "key": "brand_logo",
-            "value": "/assets/uploads/site-settings/bakery-logo.png",
+            "value": "/assets/uploads/site-settings/bakery-logo.webp",
             "group_name": "branding",
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33"
@@ -2025,7 +2025,7 @@
         {
             "id": "aca4ce37-11bf-45a5-b13d-9e6c9366ec21",
             "key": "site_logo",
-            "value": "/assets/uploads/site-settings/bakery-logo.png",
+            "value": "/assets/uploads/site-settings/bakery-logo.webp",
             "group_name": "general",
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33"
@@ -2033,7 +2033,7 @@
         {
             "id": "b53bf17d-43a6-472e-b240-7a5f97dc9968",
             "key": "favicon_url",
-            "value": "/assets/uploads/site-settings/bakery-logo.png",
+            "value": "/assets/uploads/site-settings/bakery-logo.webp",
             "group_name": "branding",
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33"
@@ -2057,7 +2057,7 @@
         {
             "id": "bfdd9a13-0d1a-41c1-95e8-a4934efb4764",
             "key": "footer_logo",
-            "value": "/assets/uploads/site-settings/bakery-logo.png",
+            "value": "/assets/uploads/site-settings/bakery-logo.webp",
             "group_name": "footer",
             "created_at": "2026-11-20 08:45:33",
             "updated_at": "2026-11-20 08:45:33"
@@ -2202,7 +2202,7 @@
         {
             "id": "3b2f5845-fc09-428d-85e7-6829bb3d9b01",
             "title": "ফ্রেশ ওভেন ক্রসাঁ ও মর্নিং পেস্ট্রি",
-            "image_url": "/assets/uploads/banners/bakery-promo-2.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-2.webp",
             "redirect_url": "/category/pastries-slices",
             "placement": "fashion",
             "category_id": null,
@@ -2216,7 +2216,7 @@
         {
             "id": "60e2c38e-c1b5-4f31-b85d-5a856ba7c3f1",
             "title": "সিগনেচার সেলিব্রেশন ও বার্থডে কেক",
-            "image_url": "/assets/uploads/banners/bakery-promo-1.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-1.webp",
             "redirect_url": "/category/celebration-cakes",
             "placement": "fashion",
             "category_id": null,
@@ -2230,7 +2230,7 @@
         {
             "id": "647e32e4-b6d8-4790-8a2a-a5ddeb815ef7",
             "title": "ফাজি ব্রাউনি, কুকিজ ও ডেজার্ট গিফট বক্স",
-            "image_url": "/assets/uploads/banners/bakery-promo-3.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-3.webp",
             "redirect_url": "/category/brownies-desserts",
             "placement": "fashion",
             "category_id": null,
@@ -2244,7 +2244,7 @@
         {
             "id": "8275bf92-0fd4-40e4-940e-020f5648d6be",
             "title": "আর্টিজান সাওয়ারডো ব্রেড, ম্যাকারন ও বেকারি গিফট বক্স",
-            "image_url": "/assets/uploads/banners/bakery-hero-3.png",
+            "image_url": "/assets/uploads/banners/bakery-hero-3.webp",
             "redirect_url": "/category/bakery-gift-boxes",
             "placement": "hero",
             "category_id": null,
@@ -2258,7 +2258,7 @@
         {
             "id": "a35a06c7-1975-4471-b4c6-ea51f999f4d2",
             "title": "প্রতিদিন তাজা বেক করা আর্টিজান কেক ও পেস্ট্রি",
-            "image_url": "/assets/uploads/banners/bakery-hero-1.png",
+            "image_url": "/assets/uploads/banners/bakery-hero-1.webp",
             "redirect_url": "/category/celebration-cakes",
             "placement": "hero",
             "category_id": null,
@@ -2272,7 +2272,7 @@
         {
             "id": "e2325f3e-0d6c-4e4d-8750-71dd2fad97df",
             "title": "ওভেন-ফ্রেশ ফ্রেঞ্চ বাটার ক্রসাঁ ও ড্যানিশ পেস্ট্রি",
-            "image_url": "/assets/uploads/banners/bakery-hero-2.png",
+            "image_url": "/assets/uploads/banners/bakery-hero-2.webp",
             "redirect_url": "/category/pastries-slices",
             "placement": "hero",
             "category_id": null,
@@ -2365,7 +2365,7 @@
             "excerpt": "প্রাকৃতিক ফার্মেন্টেশনে তৈরি সাওয়ারডো ব্রেড হজমে সহায়ক এবং পুষ্টিগুণে ভরপুর। জানুন কেন এটি প্রতিদিনের নাস্তায় রাখা উচিত...",
             "content": "সাওয়ারডো ব্রেড হলো প্রাচীনতম ও সবচেয়ে স্বাস্থ্যকর ব্রেড তৈরির পদ্ধতি। দীর্ঘ ২৪ ঘণ্টা ফার্মেন্টেশনের কারণে এটি সহজপাচ্য হয়ে ওঠে। Dream Bakery-র আর্টিজান সাওয়ারডো লোফ সম্পূর্ণ প্রিজারভেটিভ-মুক্ত।",
             "category": "GENERAL TIPS",
-            "image_url": "/assets/uploads/banners/bakery-promo-3.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-3.webp",
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
@@ -2386,7 +2386,7 @@
             "excerpt": "যেকোনো আনন্দ উদযাপনের মূল আকর্ষণ থাকে একটি সুস্বাদু কেক। ফ্লেভার, ওজন ও ফ্রস্টিং বাছাইয়ের সহজ গাইড...",
             "content": "যেকোনো জন্মদিন, অ্যানিভার্সারি বা বিশেষ উদযাপনের মূল আকর্ষণ থাকে একটি সুন্দর ও সুস্বাদু কেক। চকলেট প্রেমীদের জন্য বেলজিয়ান ডার্ক চকলেট ট্রাফল কেক এবং ক্রিমি স্বাদ পছন্দকারীদের জন্য রেড ভেলভেট ক্রিম চিজ কেক আদর্শ। Dream Bakery-তে আমরা ১০০% খাঁটি বাটার ও বেলজিয়ান চকলেট দিয়ে প্রতিটি কেক তাজা বেক করি।",
             "category": "HEALTH TIPS",
-            "image_url": "/assets/uploads/banners/bakery-promo-1.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-1.webp",
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
@@ -2407,7 +2407,7 @@
             "excerpt": "সকালের কফির সাথে একটি গরম, সোনালি ও খাস্তা ফ্রেঞ্চ ক্রসাঁ অনেকেরই প্রিয়। জেনে নিন ল্যামিনেশন বেকিংয়ের রহস্য...",
             "content": "ফ্রেঞ্চ পেস্ট্রির মুকুট বলা হয় বাটার ক্রসাঁকে। উন্নত মানের ইউরোপিয়ান কালচারড বাটার এবং ঠান্ডা ডো বারবার ভাঁজ করে ২৭টি সূক্ষ্ম স্তর তৈরি করা হয়। ড্রিম বেকারিতে প্রতিদিন ভোরে আমাদের শেফরা তাজা ক্রসাঁ ও ড্যানিশ পেস্ট্রি বেক করেন।",
             "category": "HEALTH TIPS",
-            "image_url": "/assets/uploads/banners/bakery-promo-2.png",
+            "image_url": "/assets/uploads/banners/bakery-promo-2.webp",
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
@@ -2431,7 +2431,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "thumbnail_url": "/assets/uploads/videos/video-thumb-1.png",
+            "thumbnail_url": "/assets/uploads/videos/video-thumb-1.webp",
             "title_en": "Artisan Belgian Chocolate Truffle & Celebration Cake Making",
             "title_bn": "আমাদের আর্টিজান চকলেট ট্রাফল ও সেলিব্রেশন কেক মেকিং"
         },
@@ -2443,7 +2443,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "thumbnail_url": "/assets/uploads/videos/video-thumb-4.png",
+            "thumbnail_url": "/assets/uploads/videos/video-thumb-4.webp",
             "title_en": "Gourmet Cupcakes, Fudgy Brownies & Cookie Gift Box Crafting",
             "title_bn": "গুরমেট কাপকেক, ব্রাউনি ও চকলেট কুকিজ গিফট বক্স প্রস্তুতি"
         },
@@ -2455,7 +2455,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "thumbnail_url": "/assets/uploads/videos/video-thumb-3.png",
+            "thumbnail_url": "/assets/uploads/videos/video-thumb-3.webp",
             "title_en": "Oven-Fresh French Butter Croissants & Cinnamon Rolls Baking",
             "title_bn": "ওভেন-ফ্রেশ ফ্রেঞ্চ বাটার ক্রসাঁ ও সিনামন রোল বেকিং"
         },
@@ -2467,7 +2467,7 @@
             "is_active": true,
             "created_at": "2026-11-20 08:45:34",
             "updated_at": "2026-11-20 08:45:34",
-            "thumbnail_url": "/assets/uploads/videos/video-thumb-2.png",
+            "thumbnail_url": "/assets/uploads/videos/video-thumb-2.webp",
             "title_en": "Red Velvet Cream Cheese Cake & Custom Frosting Decoration",
             "title_bn": "রেড ভেলভেট ক্রিম চিজ কেক ও কাস্টম ফ্রস্টিং ডেকোরেশন"
         }

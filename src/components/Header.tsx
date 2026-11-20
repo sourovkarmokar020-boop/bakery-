@@ -99,7 +99,7 @@ const Header = () => {
     (language === "en" ? settings.brand_name_en : settings.brand_name_bn)?.trim() ||
     settings.brand_name?.trim() ||
     (language === "en" ? "Dream Bakery" : "ড্রিম বেকারি");
-  const brandLogo = settings.brand_logo?.trim() || "/assets/uploads/site-settings/bakery-logo.png";
+  const brandLogo = resolveLocalImageUrl(settings.brand_logo?.trim() || "/assets/uploads/site-settings/bakery-logo.webp");
   // লোগো URL লোড না হলে (ভাঙা লিংক, অন্য পোর্ট/ডোমেইন) নামেই fallback — তাই হেডার কখনো ফাঁকা থাকে না
   const showBrandLogo = settings.brand_display_mode !== "name_only" && brandLogo.length > 0 && !logoError;
   const showBrandName = settings.brand_display_mode !== "logo_only" || !showBrandLogo;
