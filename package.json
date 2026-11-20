@@ -8,6 +8,7 @@
     "backend:serve": "cd backend && php artisan serve --host=127.0.0.1 --port=8001",
     "backend:migrate": "cd backend && php artisan migrate --seed",
     "build": "vite build",
+    "start": "vite preview --host 0.0.0.0",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
