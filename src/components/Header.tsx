@@ -11,6 +11,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useHomeData } from "@/hooks/useHomeData";
 import { useSiteSettings } from "@/context/SiteSettingsContext";
 import { useLanguage, getLocalizedName } from "@/context/LanguageContext";
+import { resolveLocalImageUrl } from "@/lib/productImages";
 
 interface DbCategory {
   id: string;
