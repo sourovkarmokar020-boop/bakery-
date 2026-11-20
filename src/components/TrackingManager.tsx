@@ -186,16 +186,18 @@ export function TrackingManager() {
 
 // Server-side tracking function - sends events to Laravel Backend API
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8001/api";
+let serverTrackingUnavailable = false;
 
 async function sendServerSideEvent(
   eventName: string,
   eventData: Record<string, any> = {}
 ) {
+  if (serverTrackingUnavailable) return;
   try {
     // Call the Laravel tracking endpoint
     const response = await fetch(`${API_URL}/tracking/event`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({
         event_name: eventName,
         event_data: eventData,
@@ -205,12 +207,13 @@ async function sendServerSideEvent(
       }),
     });
 
-    if (!response.ok) {
-      console.error("Server-side tracking error:", await response.text());
+    const ct = response.headers.get("content-type") || "";
+    if (response.status === 404 || response.status === 405 || !ct.includes("application/json")) {
+      serverTrackingUnavailable = true;
+      return;
     }
-  } catch (err) {
-    // Silently fail - don't break user experience
-    console.error("Server-side tracking failed:", err);
+  } catch {
+    serverTrackingUnavailable = true;
   }
 }
 

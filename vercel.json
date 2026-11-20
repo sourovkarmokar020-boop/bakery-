@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!assets/|backend/api/boot-settings\\.js).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

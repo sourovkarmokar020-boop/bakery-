@@ -168,11 +168,19 @@ const AIChatWidget = () => {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ message: text.trim() }),
       });
+      const ct = resp.headers.get("content-type") || "";
+      if (!resp.ok || !ct.includes("application/json")) {
+        const { buildLocalChatReply } = await import("@/integrations/supabase/localApi");
+        setMessages((prev) => [...prev, { role: "assistant", content: buildLocalChatReply(text.trim()) }]);
+        setLoading(false);
+        return;
+      }
       const data = await resp.json().catch(() => ({}));
       const reply = (data as any)?.reply || (language === "en" ? "Sorry, please try again later." : "দুঃখিত, একটু পরে আবার চেষ্টা করুন।");
       setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
     } catch {
-      setMessages((prev) => [...prev, { role: "assistant", content: language === "en" ? "Sorry, there was a connection issue. Please try again later." : "দুঃখিত, সংযোগে সমস্যা হয়েছে। একটু পরে আবার চেষ্টা করুন।" }]);
+      const { buildLocalChatReply } = await import("@/integrations/supabase/localApi");
+      setMessages((prev) => [...prev, { role: "assistant", content: buildLocalChatReply(text.trim()) }]);
     }
     setLoading(false);
   };

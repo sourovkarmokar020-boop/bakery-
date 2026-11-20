@@ -1,4 +1,7 @@
+import { handleLocalApi } from "./localApi";
+
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8001/api";
+let useLocalFallback = false;
 
 type Filter = { op: string; column: string; value?: unknown; operator?: string };
 type Order = { column: string; ascending?: boolean };
@@ -54,6 +57,10 @@ const tokenStore = {
 };
 
 async function api(path: string, body?: unknown, method = "POST", timeoutMs?: number) {
+  if (useLocalFallback) {
+    return handleLocalApi(path, body, method);
+  }
+
   const headers: HeadersInit = { Accept: "application/json" };
   if (!(body instanceof FormData)) headers["Content-Type"] = "application/json";
   const token = tokenStore.get();
@@ -70,8 +77,22 @@ async function api(path: string, body?: unknown, method = "POST", timeoutMs?: nu
       body: body instanceof FormData ? body : body ? JSON.stringify(body) : undefined,
       signal: controller?.signal,
     });
+  } catch {
+    useLocalFallback = true;
+    return handleLocalApi(path, body, method);
   } finally {
     if (timeout !== undefined) window.clearTimeout(timeout);
+  }
+
+  const contentType = response.headers.get("content-type") || "";
+  if (
+    response.status === 404 ||
+    response.status === 405 ||
+    response.status >= 500 ||
+    !contentType.includes("application/json")
+  ) {
+    useLocalFallback = true;
+    return handleLocalApi(path, body, method);
   }
 
   const payload = await response.json().catch(() => ({}));

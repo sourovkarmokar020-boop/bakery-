@@ -12,7 +12,7 @@ vi.mock("@/integrations/supabase/client", () => ({
 
 import { SiteSettingsProvider, useSiteSettings } from "./SiteSettingsContext";
 
-const SETTINGS_CACHE_KEY = "site_settings_cache_v2";
+const SETTINGS_CACHE_KEY = "site_settings_cache_v4";
 
 let renderedSettings: Record<string, string>[] = [];
 
