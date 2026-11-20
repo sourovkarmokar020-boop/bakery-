@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dream Bakery — Full Project Proposal & Feature Specification</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 14mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body {
+      font-family: 'Inter', 'Hind Siliguri', sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .avoid-break {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* Cover / Hero Header */
+    .hero-banner {
+      background: linear-gradient(135deg, #4A1D0B 0%, #6B2D14 55%, #B45309 100%);
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #FDE68A;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      padding: 4px 11px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .hero-title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+    .hero-subtitle {
+      font-size: 13px;
+      color: #FDE68A;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .hero-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      background: rgba(0, 0, 0, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 10.5px;
+    }
+    .hero-meta-item span {
+      display: block;
+      color: #FCD34D;
+      font-size: 9.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .hero-meta-item strong {
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      word-break: break-all;
+    }
+    .hero-meta-item a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* KPI Strip */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .kpi-card {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-radius: 10px;
+      padding: 11px 12px;
+      text-align: center;
+    }
+    .kpi-num {
+      font-size: 18px;
+      font-weight: 800;
+      color: #6B2D14;
+      line-height: 1.1;
+    }
+    .kpi-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: #92400E;
+      margin-top: 3px;
+    }
+
+    /* Section Headers */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #6B2D14;
+      padding-bottom: 5px;
+      margin-top: 14px;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: #6B2D14;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .section-tag {
+      font-size: 10px;
+      font-weight: 700;
+      color: #B45309;
+      background: #FEF3C7;
+      padding: 2px 9px;
+      border-radius: 999px;
+    }
+
+    /* Summary Box */
+    .summary-box {
+      background: #F9FAFB;
+      border-left: 4px solid #B45309;
+      border-radius: 8px;
+      padding: 11px 14px;
+      margin-bottom: 12px;
+      color: #374151;
+      font-size: 11.2px;
+    }
+
+    /* Two-column Feature Grid */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .feature-card {
+      border: 1px solid #E5E7EB;
+      border-radius: 9px;
+      padding: 10px 12px;
+      background: #FFFFFF;
+    }
+    .feature-card-title {
+      font-size: 11.8px;
+      font-weight: 700;
+      color: #6B2D14;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .feature-list li {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 3.5px;
+      font-size: 10.8px;
+      color: #374151;
+    }
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #B45309;
+      font-weight: 800;
+    }
+
+    /* Tables */
+    table.proposal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 10.6px;
+    }
+    table.proposal-table th {
+      background: #6B2D14;
+      color: #ffffff;
+      text-align: left;
+      padding: 7px 9px;
+      font-weight: 700;
+      font-size: 10.5px;
+    }
+    table.proposal-table th:first-child {
+      border-top-left-radius: 7px;
+    }
+    table.proposal-table th:last-child {
+      border-top-right-radius: 7px;
+    }
+    table.proposal-table td {
+      padding: 6.5px 9px;
+      border-bottom: 1px solid #E5E7EB;
+      color: #374151;
+      vertical-align: top;
+    }
+    table.proposal-table tr:nth-child(even) td {
+      background: #FFFDF9;
+    }
+    .badge-pill {
+      display: inline-block;
+      padding: 1.5px 7px;
+      border-radius: 999px;
+      font-size: 9.5px;
+      font-weight: 700;
+      background: #FEF3C7;
+      color: #92400E;
+      white-space: nowrap;
+    }
+    .badge-green {
+      background: #DCFCE7;
+      color: #166534;
+    }
+
+    /* Tech Stack Grid */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+      margin-bottom: 12px;
+    }
+    .tech-box {
+      background: #F9FAFB;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      padding: 9px 11px;
+    }
+    .tech-box h4 {
+      font-size: 11px;
+      font-weight: 700;
+      color: #6B2D14;
+      margin-bottom: 3px;
+    }
+    .tech-box p {
+      font-size: 10.3px;
+      color: #4B5563;
+    }
+
+    /* Footer / Sign-off */
+    .sign-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 18px;
+      padding-top: 12px;
+    }
+    .sign-box {
+      border: 1px dashed #D1D5DB;
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: #FAFAFA;
+    }
+    .sign-box h5 {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #6B2D14;
+      margin-bottom: 24px;
+    }
+    .sign-line {
+      border-top: 1px solid #9CA3AF;
+      padding-top: 5px;
+      font-size: 10.2px;
+      color: #6B7280;
+      display: flex;
+      justify-content: space-between;
+    }
+    .doc-footer {
+      text-align: center;
+      font-size: 9.8px;
+      color: #6B7280;
+      margin-top: 12px;
+      padding-top: 8px;
+      border-top: 1px solid #E5E7EB;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======================= PAGE 1 ======================= -->
+  <div class="hero-banner">
+    <div class="hero-badge">PROJECT PROPOSAL &amp; SYSTEM SPECIFICATION</div>
+    <h1 class="hero-title">Dream Bakery — Full-Stack E-Commerce &amp; ERP Platform</h1>
+    <p class="hero-subtitle">Complete Artisan Bakery Storefront, Loyalty Coin Engine, Courier Automation &amp; Back-Office Admin Suite (প্রজেক্ট প্রপোজাল ও পূর্ণাঙ্গ ফিচার ডকুমেন্টেশন)</p>
+    <div class="hero-meta-grid">
+      <div class="hero-meta-item">
+        <span>Live Demo Link</span>
+        <strong><a href="https://bakery-rust-xi.vercel.app/">bakery-rust-xi.vercel.app</a></strong>
+      </div>
+      <div class="hero-meta-item">
+        <span>Platform Architecture</span>
+        <strong>React 18 + Laravel 11 + MySQL</strong>
+      </div>
+      <div class="hero-meta-item">
+        <span>Language Support</span>
+        <strong>Bilingual (বাংলা &amp; English)</strong>
+      </div>
+      <div class="hero-meta-item">
+        <span>Project Status</span>
+        <strong>100% Ready &amp; Live Deployed</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Key Metrics Strip -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-num">35+</div>
+      <div class="kpi-label">Total Functional Modules (স্টোরফ্রন্ট ও অ্যাডমিন)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-num">26+</div>
+      <div class="kpi-label">Dedicated Admin ERP Panels (পূর্ণাঙ্গ ব্যাক-অফিস)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-num">96.7%</div>
+      <div class="kpi-label">WebP Image Optimization (আল্ট্রা-ফাস্ট লোডিং)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-num">100%</div>
+      <div class="kpi-label">Mobile, Tablet &amp; Desktop Responsive UI</div>
+    </div>
+  </div>
+
+  <!-- 1. Executive Summary -->
+  <div class="section-header">
+    <div class="section-title">1. Executive Summary (প্রজেক্টের মূল সংক্ষিপ্তসার)</div>
+    <span class="section-tag">Overview</span>
+  </div>
+  <div class="summary-box">
+    <strong>Dream Bakery</strong> হলো একটি আধুনিক, হাই-কনভার্টিং এবং সম্পূর্ণ ডায়নামিক ই-কমার্স ও বেকারি ম্যানেজমেন্ট প্ল্যাটফর্ম। কাস্টমারদের জন্য এতে রয়েছে আকর্ষণীয় <strong>বাংলা ও ইংরেজি (Bilingual)</strong> স্টোরফ্রন্ট, ১-ক্লিকে দ্রুত অর্ডার, ওজন/পাউন্ড ভ্যারিয়েন্ট সিলেকশন, লয়্যালটি কয়েন ও রিওয়ার্ড সিস্টেম, বিকাশ ও ক্যাশ অন ডেলিভারি এবং রিয়েল-টাইম অর্ডার ট্র্যাকিং। অন্যদিকে ব্যবসার মালিকের জন্য রয়েছে একটি শক্তিশালী <strong>Admin ERP Panel</strong>—যেখান থেকে প্রোডাক্ট, স্টক, অর্ডার, ইনভয়েস, <strong>Steadfast কুরিয়ার বুকিং</strong>, <strong>ফেক অর্ডার ও ফ্রড চেকার</strong>, <strong>অসম্পূর্ণ অর্ডার (Abandoned Cart) রিকভারি</strong>, এবং <strong>Facebook Conversion API (CAPI) / Pixel</strong> সহ পুরো ওয়েবসাইটের ব্র্যান্ডিং ও কালার থিম কোডিং ছাড়াই নিয়ন্ত্রণ করা যায়।
+  </div>
+
+  <!-- 2. Customer Storefront Features -->
+  <div class="section-header">
+    <div class="section-title">2. Customer Storefront &amp; Shopping Experience (কাস্টমার ওয়েবসাইট ফিচার)</div>
+    <span class="section-tag">Frontend Modules</span>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card avoid-break">
+      <div class="feature-card-title">🌐 Bilingual Storefront &amp; Dynamic Theme</div>
+      <ul class="feature-list">
+        <li><strong>Instant বাংলা / English Switch:</strong> এক ক্লিকে সম্পূর্ণ ওয়েবসাইটের ভাষা, মেনু, পণ্যের নাম ও বিবরণ বাংলা ও ইংরেজিতে পরিবর্তনের সুবিধা।</li>
+        <li><strong>Zero-Flash Theme Boot Engine:</strong> অ্যাডমিন প্যানেল থেকে সেট করা লোগো, ব্র্যান্ড কালার, বাটন কালার ও গ্রেডিয়েন্ট পেজ লোড হওয়ার প্রথম মুহূর্তেই প্রদর্শিত হয়।</li>
+        <li><strong>Mobile App-Like Bottom Navigation:</strong> মোবাইল ব্যবহারকারীদের জন্য নিচে ফিক্সড কুইক-অ্যাক্সেস ন্যাভিগেশন বার ও স্ক্রল-টু-টপ।</li>
+      </ul>
+    </div>
+
+    <div class="feature-card avoid-break">
+      <div class="feature-card-title">🎂 Bakery Catalog &amp; Variant Showcase</div>
+      <ul class="feature-list">
+        <li><strong>Multi-Level Category Navigation:</strong> সেলিব্রেশন কেক, পেস্ট্রি ও স্লাইস, আর্টিজান ব্রেড, কুকিজ, কাপকেক, সেভরি পাফ, ব্রাউনি ও গিফট বক্স।</li>
+        <li><strong>Weight, Size &amp; Pound Variants:</strong> প্রতিটি কেক বা বেকারি পণ্যে ১ পাউন্ড, ২ পাউন্ড বা ওজন অনুযায়ী অটোমেটিক দাম ও স্টক আপডেট।</li>
+        <li><strong>Flash Sale &amp; Countdown Timer:</strong> "🔥 বেকারি স্পেশাল অফার" সেকশনে লাইভ কাউন্টডাউন টাইমার ও স্টক আর্জেন্সি ব্যাজ।</li>
+      </ul>
+    </div>
+
+    <div class="feature-card avoid-break">
+      <div class="feature-card-title">🔍 Smart Search &amp; AI Visual Search</div>
+      <ul class="feature-list">
+        <li><strong>Animated Instant Search:</strong> টাইপ করার সাথে সাথেই পণ্যের ছবি ও দামসহ লাইভ সার্চ রেজাল্ট।</li>
+        <li><strong>AI Visual Image Search (ছবি দিয়ে খোঁজা):</strong> কাস্টমার যেকোনো কেক বা পণ্যের ছবি আপলোড করে ওয়েবসাইটে থাকা মিলযুক্ত পণ্য খুঁজে বের করতে পারবেন।</li>
+        <li><strong>Category &amp; Price Filtering:</strong> ক্যাটাগরি, সাব-ক্যাটাগরি ও সর্টিং অনুযায়ী পণ্য ফিল্টার ও পেজিনেশন।</li>
+      </ul>
+    </div>
+
+    <div class="feature-card avoid-break">
+      <div class="feature-card-title">💬 Live Chat, Social Proof &amp; Content</div>
+      <ul class="feature-list">
+        <li><strong>24/7 Smart Live Chat Widget:</strong> বাংলা ও ইংরেজিতে পণ্যের দাম, ডেলিভারি চার্জ, পেমেন্ট ও ক্যাটাগরি সম্পর্কে তাৎক্ষণিক স্বয়ংক্রিয় উত্তর।</li>
+        <li><strong>Direct WhatsApp &amp; Call Order:</strong> প্রোডাক্ট পেজ থেকে ১-ক্লিকে WhatsApp বা সরাসরি ফোন কলে কাস্টম কেক অর্ডারের সুবিধা।</li>
+        <li><strong>Sales Popup, Reviews, Blogs &amp; Videos:</strong> রিয়েল-টাইম সেলস নোটিফিকেশন, কাস্টমার রিভিউ স্লাইডার, ব্লগ সেকশন ও ভিডিও গ্যালারি।</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3. Cart, Checkout, Payment & Loyalty Coins -->
+  <div class="section-header">
+    <div class="section-title">3. Smart Checkout, Payments &amp; Loyalty Coin Engine (চেকআউট ও কয়েন সিস্টেম)</div>
+    <span class="section-tag">Conversion &amp; Retention</span>
+  </div>
+
+  <table class="proposal-table avoid-break">
+    <thead>
+      <tr>
+        <th style="width: 24%;">Module / Feature</th>
+        <th style="width: 58%;">Detailed Capability (বিস্তারিত বিবরণ)</th>
+        <th style="width: 18%;">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1-Page Fast Checkout</strong></td>
+        <td>লগইন ছাড়াই (Guest) অথবা অ্যাকাউন্ট লগইন করে নাম, ফোন ও ঠিকানা দিয়ে মাত্র ৩০ সেকেন্ডে অর্ডার সম্পন্ন করার সুবিধা।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>Abandoned Cart Capture</strong></td>
+        <td>কাস্টমার কার্টে নাম বা ফোন নম্বর লিখে অর্ডার সম্পূর্ণ না করে বের হয়ে গেলেও তা অটোমেটিক অ্যাডমিন প্যানেলে সেভ হয় (Lost Sales Recovery)।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>Dynamic Shipping Zones</strong></td>
+        <td>ঢাকার ভিতরে (৳৭০), ঢাকার বাইরে (৳১৩০) অথবা অ্যাডমিন থেকে নির্ধারিত যেকোনো ডেলিভারি এরিয়া অনুযায়ী অটোমেটিক চার্জ হিসাব।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>Coupon &amp; Promo Engine</strong></td>
+        <td>শতকরা (%) বা নির্ধারিত টাকার (Fixed) ডিসকাউন্ট কুপন (যেমন: <code>WELCOME10</code>), সর্বনিম্ন অর্ডার শর্ত, মেয়াদ ও ব্যবহারের সীমা যাচাই।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>VIP Loyalty Coin System</strong></td>
+        <td>প্রতি ১০০ টাকা অর্ডারে কয়েন অর্জন, <strong>Bronze / Silver / Gold VIP Tier</strong> মাল্টিপ্লায়ার, এবং জমানো কয়েন দিয়ে চেকআউটে ডিসকাউন্ট বা ফ্রি গিফট প্রোডাক্ট রিডিম।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>Payment Gateways</strong></td>
+        <td>ক্যাশ অন ডেলিভারি (Cash on Delivery - COD) এবং অফিশিয়াল <strong>bKash Tokenized Payment Gateway</strong> (Sandbox ও Live মোড)।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+      <tr>
+        <td><strong>Live Order Tracking &amp; Invoice</strong></td>
+        <td>অর্ডার নম্বর বা ফোন নম্বর দিয়ে <code>/track-order</code> পেজে অর্ডারের বর্তমান অবস্থা ট্র্যাকিং এবং প্রিন্টেবল ব্র্যান্ডেড ইনভয়েস।</td>
+        <td><span class="badge-pill badge-green">Included &amp; Live</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ======================= PAGE 2 ======================= -->
+  <div class="page-break"></div>
+
+  <!-- 4. Comprehensive Admin Panel -->
+  <div class="section-header" style="margin-top: 0;">
+    <div class="section-title">4. Admin Panel &amp; Back-Office ERP Modules (অ্যাডমিন প্যানেলের সম্পূর্ণ তালিকা)</div>
+    <span class="section-tag">26+ Admin Modules</span>
+  </div>
+
+  <table class="proposal-table">
+    <thead>
+      <tr>
+        <th style="width: 24%;">Admin Module</th>
+        <th style="width: 58%;">Functionality &amp; Business Control (কার্যকারিতা)</th>
+        <th style="width: 18%;">Access Route</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Executive Dashboard</strong></td>
+        <td>মোট বিক্রি, অর্ডারের পরিসংখ্যান, রেভিনিউ চার্ট, টপ সেলিং প্রোডাক্ট, লো-স্টক অ্যালার্ট, কাস্টমার ইনসাইটস ও কুরিয়ার ব্যালেন্স কার্ড।</td>
+        <td><code>/admin</code></td>
+      </tr>
+      <tr>
+        <td><strong>2. Product Catalog Manager</strong></td>
+        <td>নতুন পণ্য যোগ, এডিট, ছবি আপলোড, বাংলা ও ইংরেজি নাম/বিবরণ, ওজন/ইউনিট, রেগুলার ও সেল প্রাইস, SKU এবং ফিচার্ড স্ট্যাটাস নিয়ন্ত্রণ।</td>
+        <td><code>/admin/products</code></td>
+      </tr>
+      <tr>
+        <td><strong>3. Variant &amp; Bulk Price Editor</strong></td>
+        <td>সাইজ/পাউন্ড ও কালার ভ্যারিয়েন্ট ম্যানেজমেন্ট এবং এক পেজ থেকে দ্রুত সব পণ্যের দাম ও স্টক আপডেট (Bulk Price Edit)।</td>
+        <td><code>/admin/price-edit</code></td>
+      </tr>
+      <tr>
+        <td><strong>4. Category &amp; Brand Manager</strong></td>
+        <td>ক্যাটাগরি ও সাব-ক্যাটাগরি তৈরি, ছবি পরিবর্তন, হোমপেজ ও ন্যাভবারে দেখানোর টগল এবং সর্ট অর্ডার নিয়ন্ত্রণ।</td>
+        <td><code>/admin/categories</code></td>
+      </tr>
+      <tr>
+        <td><strong>5. Order Management &amp; Invoice</strong></td>
+        <td>সব অর্ডারের তালিকা, স্ট্যাটাস পরিবর্তন (Pending, Confirmed, Shipped, Delivered, Cancelled), কাস্টম স্ট্যাটাস তৈরি ও এক ক্লিকে ইনভয়েস প্রিন্ট।</td>
+        <td><code>/admin/orders</code></td>
+      </tr>
+      <tr>
+        <td><strong>6. Manual / POS Order Creator</strong></td>
+        <td>ফোন কল, ফেসবুক পেজ বা WhatsApp-এ আসা অর্ডার অ্যাডমিন প্যানেল থেকে সরাসরি এন্ট্রি করার পূর্ণাঙ্গ ম্যানুয়াল অর্ডার সিস্টেম।</td>
+        <td><code>/admin/manual-order</code></td>
+      </tr>
+      <tr>
+        <td><strong>7. Abandoned Orders Recovery</strong></td>
+        <td>চেকআউট পেজে তথ্য লিখেও যারা অর্ডার কনফার্ম করেননি তাদের তালিকা, ফোন নম্বর ও কার্ট আইটেম দেখে কল করে অর্ডারে রূপান্তর।</td>
+        <td><code>/admin/abandoned-orders</code></td>
+      </tr>
+      <tr>
+        <td><strong>8. Steadfast Courier Automation</strong></td>
+        <td>অ্যাডমিন প্যানেল থেকে ১-ক্লিকে অর্ডার সরাসরি <strong>Steadfast Courier</strong>-এ পাঠানো, ট্র্যাকিং কোড জেনারেট এবং লাইভ ব্যালেন্স চেক।</td>
+        <td><code>/admin/steadfast</code></td>
+      </tr>
+      <tr>
+        <td><strong>9. Courier Fraud Checker</strong></td>
+        <td>কাস্টমারের ফোন নম্বর দিয়ে তার পূর্ববর্তী কুরিয়ার ডেলিভারি সাকসেস বনাম রিটার্ন রেশিও যাচাই করে ফেক অর্ডার শনাক্তকরণ।</td>
+        <td><code>/admin/fraud-checker</code></td>
+      </tr>
+      <tr>
+        <td><strong>10. Customer &amp; IP Blocker</strong></td>
+        <td>ভুয়া অর্ডারকারী কাস্টমারের ফোন নম্বর অথবা IP Address ব্লক করার সুবিধা—ব্লক করা ব্যক্তি আর অর্ডার করতে পারবেন না।</td>
+        <td><code>/admin/blocked-customers</code></td>
+      </tr>
+      <tr>
+        <td><strong>11. Loyalty Coins &amp; VIP Tiers</strong></td>
+        <td>কয়েন আর্নিং রুলস, মেয়াদ, কাস্টমারের কয়েন ব্যালেন্স অ্যাডজাস্টমেন্ট, VIP টিয়ার (Bronze/Silver/Gold) এবং ফ্রি রিওয়ার্ড প্রোডাক্ট ক্যাটালগ।</td>
+        <td><code>/admin/coins</code></td>
+      </tr>
+      <tr>
+        <td><strong>12. Coupons &amp; Shipping Manager</strong></td>
+        <td>ডিসকাউন্ট কুপন তৈরি ও নিয়ন্ত্রণ এবং ডেলিভারি এরিয়া ও চার্জ কাস্টমাইজেশন।</td>
+        <td><code>/admin/coupons</code></td>
+      </tr>
+      <tr>
+        <td><strong>13. Marketing &amp; Pixel Suite</strong></td>
+        <td><strong>Facebook Pixel + Server-Side Conversion API (CAPI)</strong>, Google Analytics 4 (GA4), Google Ads ও TikTok Pixel কনফিগারেশন।</td>
+        <td><code>/admin/tracking</code></td>
+      </tr>
+      <tr>
+        <td><strong>14. Sales &amp; Stock Reports</strong></td>
+        <td>তারিখ অনুযায়ী বিস্তারিত সেলস রিপোর্ট, রেভিনিউ বিশ্লেষণ এবং বর্তমান স্টকের পূর্ণাঙ্গ ইনভেন্টরি রিপোর্ট।</td>
+        <td><code>/admin/sales-report</code></td>
+      </tr>
+      <tr>
+        <td><strong>15. Brand, Theme &amp; Site Settings</strong></td>
+        <td>সাইটের নাম, লোগো, ফ্যাভিকন, ব্র্যান্ড ও বাটন কালার, টপবার স্ক্রলিং টেক্সট, ফুটার লিংক, SEO মেটা ট্যাগ ও সেকশন অন/অফ সেটিংস।</td>
+        <td><code>/admin/settings</code></td>
+      </tr>
+      <tr>
+        <td><strong>16. CMS, Blogs, Reviews &amp; SMTP</strong></td>
+        <td>হিরো ও প্রোমো ব্যানার, ব্লগ পোস্ট, ভিডিও গ্যালারি, কাস্টমার রিভিউ মডারেশন, পলিসি পেজ এডিটর, bKash সেটিংস, SMTP ইমেইল ও স্টাফ রোল।</td>
+        <td><code>/admin/banners</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 5. Technical Architecture & Performance -->
+  <div class="section-header">
+    <div class="section-title">5. Technical Architecture, Speed &amp; Security (টেকনোলজি ও সিকিউরিটি)</div>
+    <span class="section-tag">Enterprise Stack</span>
+  </div>
+
+  <div class="tech-grid avoid-break">
+    <div class="tech-box">
+      <h4>⚡ Modern Frontend Stack</h4>
+      <p>React 18, TypeScript, Vite 5, Tailwind CSS, shadcn/ui, TanStack React Query (স্মার্ট ক্যাশিং ও ডিডুপ্লিকেশন), এবং রেসপনসিভ পিডব্লিউএ-রেডি আর্কিটেকচার।</p>
+    </div>
+    <div class="tech-box">
+      <h4>🛡️ Backend &amp; Database</h4>
+      <p>PHP Laravel 11 RESTful API, MySQL Database, Laravel Sanctum Token Authentication, এবং স্ট্যাটিক/ক্লাউড হোস্টিংয়ের জন্য বিল্ট-ইন হাই-স্পিড স্ন্যাপশট ফলব্যাক ইঞ্জিন।</p>
+    </div>
+    <div class="tech-box">
+      <h4>🚀 Speed &amp; Security</h4>
+      <p>৯৬.৭% কম্প্রেসড WebP ইমেজ পাইপলাইন, ১ বছরের CDN Immutable Cache, সার্ভার-সাইড কুপন ও কয়েন ভ্যালিডেশন, এবং IP/Phone ফ্রড প্রোটেকশন মিডলওয়্যার।</p>
+    </div>
+  </div>
+
+  <!-- 6. Deliverables & Handover Package -->
+  <div class="section-header">
+    <div class="section-title">6. Project Deliverables &amp; Handover Package (ক্লায়েন্ট যা যা পাচ্ছেন)</div>
+    <span class="section-tag">Complete Handover</span>
+  </div>
+
+  <div class="feature-grid avoid-break">
+    <div class="feature-card">
+      <div class="feature-card-title">📦 Deliverables Included</div>
+      <ul class="feature-list">
+        <li><strong>Live Production Website:</strong> ক্লাউড/কাস্টম ডোমেইনে সম্পূর্ণ লাইভ ও কনফিগার করা ওয়েবসাইট (<code>https://bakery-rust-xi.vercel.app/</code>)।</li>
+        <li><strong>Full Source Code &amp; Database:</strong> ফ্রন্টএন্ড (React/TypeScript), ব্যাকএন্ড (Laravel 11) এবং সম্পূর্ণ প্রি-সিডেড MySQL ডাটাবেস (.sql ও স্ন্যাপশট)।</li>
+        <li><strong>cPanel &amp; Cloud Deployment Ready:</strong> যেকোনো cPanel শেয়ার্ড হোস্টিং, VPS অথবা ক্লাউড প্ল্যাটফর্মে ডিপ্লয় করার রেডি প্যাকেজ ও গাইড।</li>
+      </ul>
+    </div>
+    <div class="feature-card">
+      <div class="feature-card-title">🤝 Admin Access &amp; Support</div>
+      <ul class="feature-list">
+        <li><strong>Full Super-Admin Credentials:</strong> অ্যাডমিন প্যানেলের সম্পূর্ণ নিয়ন্ত্রণ এবং আনলিমিটেড স্টাফ/অ্যাডমিন ইউজার তৈরির সুবিধা।</li>
+        <li><strong>Pre-Loaded Bakery Catalog:</strong> ৩২টি প্রিমিয়াম বেকারি পণ্য, ৮টি ক্যাটাগরি, ১২টি ওজন ভ্যারিয়েন্ট, ৬টি ব্যানার, ব্লগ ও রিভিউসহ রেডি স্টোর।</li>
+        <li><strong>Handover &amp; Technical Support:</strong> কাস্টম ডোমেইন কানেকশন, বিকাশ/কুরিয়ার API কী সেটআপ এবং অ্যাডমিন প্যানেল পরিচালনার গাইডলাইন।</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Sign-off Blocks -->
+  <div class="sign-grid avoid-break">
+    <div class="sign-box">
+      <h5>Prepared &amp; Submitted By (ডেভেলপার / এজেন্সি)</h5>
+      <div class="sign-line">
+        <span>Authorized Signature</span>
+        <span>Date: 20 Nov 2026</span>
+      </div>
+    </div>
+    <div class="sign-box">
+      <h5>Accepted &amp; Approved By (সম্মানিত ক্লায়েন্ট)</h5>
+      <div class="sign-line">
+        <span>Client Signature</span>
+        <span>Date: ____ / ____ / 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-footer">
+    <strong>Dream Bakery E-Commerce &amp; ERP Platform</strong> • Live Preview: https://bakery-rust-xi.vercel.app/ • Generated Project Proposal
+  </div>
+
+</body>
+</html>

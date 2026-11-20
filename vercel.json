@@ -12,7 +12,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets/|backend/api/boot-settings\\.js).*)",
+      "source": "/((?!assets/|backend/api/boot-settings\\.js|Dream_Bakery_Project_Proposal\\.pdf).*)",
       "destination": "/index.html"
     }
   ]
