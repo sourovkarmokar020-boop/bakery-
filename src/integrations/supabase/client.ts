@@ -1,7 +1,10 @@
 import { handleLocalApi } from "./localApi";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8001/api";
-let useLocalFallback = false;
+// On static hosts (Vercel / EthioDeploy), skip failed network round-trips to /backend/api and serve snapshot in 0ms
+let useLocalFallback =
+  typeof window !== "undefined" &&
+  !/^(localhost|127\.0\.0\.1)$/i.test(window.location.hostname);
 
 type Filter = { op: string; column: string; value?: unknown; operator?: string };
 type Order = { column: string; ascending?: boolean };

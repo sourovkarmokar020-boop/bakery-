@@ -4,9 +4,9 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { resolveLocalImageUrl } from "@/lib/productImages";
 import { useLanguage } from "@/context/LanguageContext";
-const blog1 = "/assets/uploads/banners/bakery-promo-1.png";
-const blog2 = "/assets/uploads/banners/bakery-promo-2.png";
-const blog3 = "/assets/uploads/banners/bakery-promo-3.png";
+const blog1 = "/assets/uploads/banners/bakery-promo-1.webp";
+const blog2 = "/assets/uploads/banners/bakery-promo-2.webp";
+const blog3 = "/assets/uploads/banners/bakery-promo-3.webp";
 
 export const blogs = [
   {

@@ -14,7 +14,7 @@ const fallbackSlides: Slide[] = [
     title: "প্রতিদিন তাজা বেক করা আর্টিজান কেক ও পেস্ট্রি",
     title_en: "Freshly Baked Artisan Cakes & Pastries",
     title_bn: "প্রতিদিন তাজা বেক করা আর্টিজান কেক ও পেস্ট্রি",
-    image: "/assets/uploads/banners/bakery-hero-1.png",
+    image: "/assets/uploads/banners/bakery-hero-1.webp",
     link: "/category/celebration-cakes",
   },
   {
@@ -22,7 +22,7 @@ const fallbackSlides: Slide[] = [
     title: "ফ্রেঞ্চ বাটার ক্রসাঁ, সাওয়ারডো ব্রেড ও মর্নিং পেস্ট্রি",
     title_en: "Warm French Croissants, Sourdough & Morning Pastries",
     title_bn: "ফ্রেঞ্চ বাটার ক্রসাঁ, সাওয়ারডো ব্রেড ও মর্নিং পেস্ট্রি",
-    image: "/assets/uploads/banners/bakery-hero-2.png",
+    image: "/assets/uploads/banners/bakery-hero-2.webp",
     link: "/category/artisan-breads",
   },
   {
@@ -30,16 +30,23 @@ const fallbackSlides: Slide[] = [
     title: "গুরমেট কাপকেক, কুকিজ ও বেকারি গিফট বক্স",
     title_en: "Gourmet Cupcakes, Cookies & Bakery Gift Boxes",
     title_bn: "গুরমেট কাপকেক, কুকিজ ও বেকারি গিফট বক্স",
-    image: "/assets/uploads/banners/bakery-hero-3.png",
+    image: "/assets/uploads/banners/bakery-hero-3.webp",
     link: "/category/bakery-gift-boxes",
   },
 ];
 
-const SlideImage = ({ slide }: { slide: Slide }) => {
+const SlideImage = ({ slide, index = 0 }: { slide: Slide; index?: number }) => {
   const { language } = useLanguage();
   return (
-    <div className="relative rounded-xl overflow-hidden aspect-[16/7] md:aspect-[16/6]">
-      <img src={slide.image} alt={getLocalizedTitle(slide, language)} className="w-full h-full object-cover absolute inset-0" />
+    <div className="relative rounded-xl overflow-hidden aspect-[16/7] md:aspect-[16/6] bg-muted">
+      <img
+        src={slide.image}
+        alt={getLocalizedTitle(slide, language)}
+        decoding="async"
+        fetchPriority={index === 0 ? "high" : "low"}
+        loading={index === 0 ? "eager" : "lazy"}
+        className="w-full h-full object-cover absolute inset-0"
+      />
     </div>
   );
 };
@@ -84,15 +91,15 @@ const HeroSlider = () => {
       className="w-full [&_.embla\_\_dots]:hidden"
     >
       <CarouselContent className="-ml-0">
-        {slides.map((slide) => (
+        {slides.map((slide, idx) => (
           <CarouselItem key={slide.id} className="pl-0">
             {/^https?:\/\//.test(slide.link) ? (
               <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                <SlideImage slide={slide} />
+                <SlideImage slide={slide} index={idx} />
               </a>
             ) : (
               <Link to={slide.link}>
-                <SlideImage slide={slide} />
+                <SlideImage slide={slide} index={idx} />
               </Link>
             )}
           </CarouselItem>

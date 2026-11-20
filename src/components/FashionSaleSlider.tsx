@@ -20,7 +20,7 @@ const fallbackBanners: FashionBanner[] = [
     title: "সিগনেচার সেলিব্রেশন কেক",
     title_en: "Signature Celebration Cakes",
     title_bn: "সিগনেচার সেলিব্রেশন কেক",
-    image: "/assets/uploads/banners/bakery-promo-1.png",
+    image: "/assets/uploads/banners/bakery-promo-1.webp",
     link: "/category/celebration-cakes",
   },
   {
@@ -28,7 +28,7 @@ const fallbackBanners: FashionBanner[] = [
     title: "ফ্রেশ ওভেন ক্রসাঁ ও পেস্ট্রি",
     title_en: "Fresh Oven Croissants & Pastries",
     title_bn: "ফ্রেশ ওভেন ক্রসাঁ ও পেস্ট্রি",
-    image: "/assets/uploads/banners/bakery-promo-2.png",
+    image: "/assets/uploads/banners/bakery-promo-2.webp",
     link: "/category/pastries-slices",
   },
   {
@@ -36,7 +36,7 @@ const fallbackBanners: FashionBanner[] = [
     title: "আর্টিজান কুকিজ ও ব্রাউনি বক্স",
     title_en: "Artisan Cookies & Brownie Boxes",
     title_bn: "আর্টিজান কুকিজ ও ব্রাউনি বক্স",
-    image: "/assets/uploads/banners/bakery-promo-3.png",
+    image: "/assets/uploads/banners/bakery-promo-3.webp",
     link: "/category/brownies-desserts",
   },
 ];
@@ -50,6 +50,7 @@ const FashionBannerItem = ({ banner }: { banner: FashionBanner }) => {
         src={banner.image}
         alt={alt}
         loading="lazy"
+        decoding="async"
         className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
       />
     </div>

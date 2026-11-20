@@ -41,7 +41,7 @@ const footerLabelTranslations: Record<string, Record<"en" | "bn", string>> = {
 
 // অ্যাডমিন প্যানেল → সেটিংস → ফুটার লোগো না দিলে এই ডিফল্ট লোগোটি বসে
 // (ট্যাগলাইনসহ ফুল ভার্সন, স্বচ্ছ ব্যাকগ্রাউন্ড)
-const DEFAULT_FOOTER_LOGO = "/assets/uploads/site-settings/bakery-logo.png";
+const DEFAULT_FOOTER_LOGO = "/assets/uploads/site-settings/bakery-logo.webp";
 
 // ফুটারের লোগো/লেখার নিচে যে ঠিকানা ও ফোন নম্বর বসে। অ্যাডমিন প্যানেল → সেটিংস →
 // ফুটার সেটিংস → "ঠিকানা ও ফোন" থেকে বদলানো যায়; খালি রাখলে এই ডিফল্ট দুটোই দেখাবে।
@@ -194,11 +194,12 @@ const Footer = () => {
         <div className="bg-muted border-t border-b">
           <div className="mx-auto max-w-7xl px-4 sm:px-8 py-4">
             <img
-              src="/assets/uploads/site-settings/bakery-footer-banner.png"
+              src="/assets/uploads/site-settings/bakery-footer-banner.webp"
               alt="Dream Bakery Artisanal Collection"
-              width={1936}
-              height={812}
+              width={896}
+              height={500}
               loading="lazy"
+              decoding="async"
               className="block h-auto w-full max-h-[340px] object-cover rounded-2xl shadow-md"
             />
           </div>

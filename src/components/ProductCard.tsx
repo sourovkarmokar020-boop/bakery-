@@ -58,6 +58,7 @@ const ProductCard = ({ product, showUrgency = false }: ProductCardProps) => {
             alt={getLocalizedName(product, language)}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               if (target.src !== "/placeholder.svg") {

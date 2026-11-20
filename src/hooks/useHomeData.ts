@@ -28,7 +28,7 @@ export type HomeData = {
   allCategories: HomeCategory[];
 };
 
-const HOME_CACHE_KEY = "dream_bakery_home_data_v3";
+const HOME_CACHE_KEY = "dream_bakery_home_data_v4";
 
 const fetchHomeData = async (): Promise<HomeData> => {
   const { data, error } = await supabase.home.getData();

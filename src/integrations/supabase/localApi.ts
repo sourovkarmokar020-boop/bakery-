@@ -3,7 +3,7 @@ import rawSnapshot from "@/data/dbSnapshot.json";
 type Row = Record<string, any>;
 type TableMap = Record<string, Row[]>;
 
-const STORAGE_KEY = "dream_bakery_local_db_v1";
+const STORAGE_KEY = "dream_bakery_local_db_v2";
 const SESSION_KEY = "dream_bakery_local_session_v1";
 
 const RELATIONS: Record<string, Record<string, [string, string, string[]]>> = {
