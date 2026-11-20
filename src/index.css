@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* অ্যাডমিন প্যানেলে লেখা যাতে ঝাপসা ধূসর না হয়ে স্পষ্ট কালো দেখায় —
+     শুধু .admin-area এর ভেতরে প্রযোজ্য, স্টোরফ্রন্টের ডিজাইন অপরিবর্তিত */
+  .admin-area {
+    --foreground: 0 0% 7%;
+    --card-foreground: 0 0% 7%;
+    --popover-foreground: 0 0% 7%;
+    --muted-foreground: 150 8% 26%;
+    --sidebar-foreground: 150 10% 15%;
+    --sidebar-accent-foreground: 150 10% 12%;
+  }
+
+  :root {
+    --background: 36 45% 98%;
+    --foreground: 20 45% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 45% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 45% 12%;
+
+    --primary: 18 68% 25%;
+    --primary-foreground: 36 45% 98%;
+    --button: 28 88% 37%;
+    --button-foreground: 0 0% 100%;
+
+    --secondary: 34 55% 93%;
+    --secondary-foreground: 18 68% 22%;
+
+    --muted: 34 35% 93%;
+    --muted-foreground: 20 20% 42%;
+
+    --accent: 36 95% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 25% 86%;
+    --input: 30 25% 86%;
+    --ring: 18 68% 25%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 34 45% 96%;
+    --sidebar-foreground: 18 68% 20%;
+    --sidebar-primary: 18 68% 25%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 34 40% 92%;
+    --sidebar-accent-foreground: 18 68% 20%;
+    --sidebar-border: 30 25% 88%;
+    --sidebar-ring: 18 68% 25%;
+  }
+
+  .dark {
+    --background: 211 25% 8%;
+    --foreground: 210 15% 95%;
+
+    --card: 211 25% 10%;
+    --card-foreground: 210 15% 95%;
+
+    --popover: 211 25% 10%;
+    --popover-foreground: 210 15% 95%;
+
+    --primary: 211 55% 35%;
+    --primary-foreground: 0 0% 100%;
+    --button: 208 97% 40%;
+    --button-foreground: 0 0% 100%;
+
+    --secondary: 211 25% 15%;
+    --secondary-foreground: 210 15% 95%;
+
+    --muted: 211 20% 15%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 33 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 211 20% 18%;
+    --input: 211 20% 18%;
+    --ring: 211 55% 35%;
+
+    --sidebar-background: 211 25% 7%;
+    --sidebar-foreground: 210 15% 95%;
+    --sidebar-primary: 211 55% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 211 20% 13%;
+    --sidebar-accent-foreground: 210 15% 95%;
+    --sidebar-border: 211 20% 15%;
+    --sidebar-ring: 211 55% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Hind Siliguri', sans-serif;
+    overscroll-behavior-x: none;
+    position: relative;
+  }
+
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+  }
+}
+
+/* Hide scrollbar for category slider */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body.mobile-menu-open .mobile-menu-hide {
+    display: none !important;
+  }
+}
+
+
+@keyframes scale-in {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

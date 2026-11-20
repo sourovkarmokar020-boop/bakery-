@@ -1,0 +1,32 @@
+# ==========================================================
+#  Dream Mart — Laravel backend  |  public_html/backend/.htaccess
+# ----------------------------------------------------------
+#  Laravel-এর আসল entry point হলো backend/public/index.php.
+#  শেয়ার্ড হোস্টিংয়ে document root বদলানো যায় না, তাই /backend/... এর
+#  সব রিকোয়েস্ট এখান থেকে public/ ফোল্ডারে পাঠানো হয়।
+#  ফলে .env, app/, vendor/, storage/ কোনোটাই সরাসরি ব্রাউজার থেকে
+#  পড়া যায় না — সব Laravel-এর ভিতর দিয়ে যায়।
+# ==========================================================
+
+Options -Indexes
+
+# ---- সংবেদনশীল ফাইল সরাসরি ব্লক (বাড়তি নিরাপত্তা) ----
+<FilesMatch "^\.env|^\.env\..*|composer\.(json|lock)|artisan|package\.json$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /backend/
+
+  # সব রিকোয়েস্ট public/ ফোল্ডারে পাঠাও।
+  # (?!public/) — একবার rewrite হয়ে যাওয়া রিকোয়েস্ট আবার rewrite হবে না,
+  # না হলে public/public/public/... হয়ে infinite loop হতো।
+  RewriteRule ^(?!public/)(.*)$ public/$1 [L]
+</IfModule>

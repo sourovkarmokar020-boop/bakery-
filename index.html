@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Bakery — Freshly Baked Cakes, Pastries & Artisan Breads</title>
+    <meta name="description" content="Dream Bakery - প্রতিদিন তাজা বেক করা কেক, পেস্ট্রি, ক্রসাঁ, আর্টিজান ব্রেড ও কুকিজ">
+    <meta name="author" content="Dream Bakery" />
+    <link rel="icon" type="image/png" href="/assets/uploads/site-settings/bakery-logo.png" />
+
+    <!-- Admin-এর সেট করা সেটিংস সার্ভার থেকে এনে প্রথম paint-এর আগেই বসায় —
+         admin সেটিংস বদলালে নতুনটাই automatic ডিফল্ট হয়, rebuild লাগে না।
+         async দেওয়া যাবে না — তাহলে React আগে রেন্ডার হয়ে ডিফল্ট নাম/রঙ ফ্ল্যাশ করে -->
+    <script src="%VITE_API_URL%/boot-settings.js"></script>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/uploads/banners/bakery-hero-1.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+ 
+    <meta name="twitter:image" content="/assets/uploads/banners/bakery-hero-1.png">
+    <meta property="og:title" content="Dream Bakery — Freshly Baked Every Day">
+  <meta name="twitter:title" content="Dream Bakery — Freshly Baked Every Day">
+  <meta property="og:description" content="Dream Bakery - প্রতিদিন তাজা বেক করা কেক, পেস্ট্রি, ক্রসাঁ, আর্টিজান ব্রেড ও কুকিজ">
+  <meta name="twitter:description" content="Dream Bakery - প্রতিদিন তাজা বেক করা কেক, পেস্ট্রি, ক্রসাঁ, আর্টিজান ব্রেড ও কুকিজ">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+  
+</html>

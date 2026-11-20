@@ -1,0 +1,50 @@
+# ==========================================================
+#  Dream Mart — Frontend (React SPA)  |  public_html/.htaccess
+# ==========================================================
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # ---- Laravel backend (/backend/...) SPA rewrite থেকে বাদ ----
+  # এই লাইনটা না থাকলে /backend/api/... রিকোয়েস্টও index.html-এ চলে যেত।
+  RewriteRule ^backend(/.*)?$ - [L]
+
+  # ---- আসল ফাইল বা ফোল্ডার থাকলে সেটাই সার্ভ হবে ----
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # ---- বাকি সব রুট React SPA-তে পাঠাও ----
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ---- Compression ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+</IfModule>
+
+# ---- Browser caching ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # hash-করা assets — এক বছর ক্যাশ করা নিরাপদ
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType font/woff2              "access plus 1 year"
+  # index.html কখনো ক্যাশ হবে না — নতুন ডিপ্লয় সাথে সাথে দেখা যাবে
+  ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
